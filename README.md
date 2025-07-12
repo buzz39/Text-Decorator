@@ -1,6 +1,6 @@
-# YayText - Unicode Text Styling System
+# Text Decorator - Unicode Text Styling System
 
-YayText transforms ordinary text into stylized Unicode text with various fonts and decorative marks. This project provides both a Flask API and a Django web application to access Unicode text transformation functionality.
+Text Decorator transforms ordinary text into stylized Unicode text with various fonts and decorative marks. This project provides both a Flask API and a Django web application to access Unicode text transformation functionality.
 
 ## 🌟 Features
 
@@ -107,7 +107,7 @@ POST /api/style
 
 ```json
 {
-  "text": "Hello World",
+  "text": "Text Decorator",
   "style": "bold",
   "marks": ["underline", "overline"]
 }
@@ -117,7 +117,7 @@ POST /api/style
 
 ```json
 {
-  "original": "Hello World",
+  "original": "Text Decorator",
   "styled": "𝐇̲̅𝐞̲̅𝐥̲̅𝐥̲̅𝐨̲̅ ̲̅𝐖̲̅𝐨̲̅𝐫̲̅𝐥̲̅𝐝̲̅",
   "style": "bold",
   "marks": ["underline", "overline"]
@@ -136,7 +136,7 @@ POST /api/style
 1. Clone the repository:
    ```bash
    git clone <repository-url>
-   cd YayText
+   cd text-decorator
    ```
 
 2. Install dependencies:
@@ -183,7 +183,7 @@ response = requests.post(
     "https://text-helper-smoky.vercel.app/api/style",
     headers={"Content-Type": "application/json"},
     data=json.dumps({
-        "text": "Hello World",
+        "text": "Text Decorator",
         "style": "script",
         "marks": ["underline"]
     })
@@ -223,12 +223,12 @@ The project is deployed on Vercel. The configuration is defined in `vercel.json`
 
 ## 🆕 What's New
 
-This YayText API has been significantly expanded with:
+This Text Decorator API has been significantly expanded with:
 
 - **18 new text styles** including fullwidth, bubble text, superscript, subscript, upside down, and more
 - **75+ additional combining marks** for extensive text decoration options
 - **Mathematical alphanumeric symbols** from Unicode Mathematical Alphanumeric Symbols block
-- **Creative Unicode transformations** inspired by YayText.com and YayText.vn
+- **Creative Unicode transformations** inspired by YayText.com and YayText.vn websites
 - **Regional indicator symbols** for flag-style text
 - **Cherokee-like and weird text** styles for unique effects
 - **🇻🇳 Vietnamese language support** with proper handling of diacritics and tone marks

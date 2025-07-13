@@ -51,7 +51,7 @@ Text Decorator transforms ordinary text into stylized Unicode text with various 
 
 The API is deployed and accessible at:
 ```
-https://text-helper-smoky.vercel.app
+text-decorator.vercel.app
 ```
 
 ## 📋 API Documentation
